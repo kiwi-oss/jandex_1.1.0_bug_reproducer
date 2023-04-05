@@ -1,0 +1,16 @@
+pluginManagement {
+	repositories {
+		mavenLocal()
+		mavenCentral()
+		gradlePluginPortal()
+	}
+	plugins {
+		id 'io.quarkus' version "${quarkusPlatformVersion}"
+		id 'org.kordamp.gradle.jandex' version "${jandexVersion}"
+	}
+}
+include 'subproject1'
+include 'subproject2'
+include 'subproject3'
+include 'subproject4'
+include 'subproject5'

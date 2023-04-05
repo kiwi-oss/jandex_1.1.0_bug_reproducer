@@ -1,0 +1,11 @@
+allprojects {
+	group 'com.example.jandexissue'
+}
+
+subprojects {
+	repositories {
+		mavenLocal()
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}

@@ -1,0 +1,14 @@
+plugins {
+	id 'java'
+	id 'io.quarkus'
+	id 'org.kordamp.gradle.jandex'
+}
+
+dependencies {
+	implementation project(':subproject4')
+	implementation project(':subproject2')
+	implementation project(':subproject3')
+	implementation platform("io.quarkus:quarkus-bom:${quarkusPlatformVersion}")
+}
+
+compileTestJava.dependsOn 'jandex'
